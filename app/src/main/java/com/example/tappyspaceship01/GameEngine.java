@@ -185,6 +185,22 @@ public class GameEngine extends SurfaceView implements Runnable {
             // draw lines
 
 
+            paintbrush.setColor(Color.BLACK);
+            this.canvas.drawRect(0,300, 2400, 330, paintbrush);
+            paintbrush.setColor(Color.BLACK);
+
+            paintbrush.setColor(Color.BLACK);
+            this.canvas.drawRect(0,580, 2400, 610, paintbrush);
+            paintbrush.setColor(Color.BLACK);
+
+            paintbrush.setColor(Color.BLACK);
+            this.canvas.drawRect(0,860, 2400, 890, paintbrush);
+            paintbrush.setColor(Color.BLACK);
+
+            paintbrush.setColor(Color.BLACK);
+            this.canvas.drawRect(0,1140, 2400, 1170, paintbrush);
+            paintbrush.setColor(Color.BLACK);
+
 
 
             // this.canvas.drawRect(left, top, right, bottom, paintbrush);
@@ -227,9 +243,12 @@ public class GameEngine extends SurfaceView implements Runnable {
         int userAction = event.getActionMasked();
         //@TODO: What should happen when person touches the screen?
         if (userAction == MotionEvent.ACTION_DOWN) {
+            fingerAction = "mousedown";
 
         }
         else if (userAction == MotionEvent.ACTION_UP) {
+
+            fingerAction = "mouseup";
 
         }
 
